@@ -336,7 +336,7 @@ $(document).ready(function(){
 
     $.post('/category/get-magazines-by-category',{ search_item:search_item }, function (res) {
 
-      //send ajax request to server to search 
+      //send ajax request to server to search and grab the data from sql query
 
     },'json');
   }
