@@ -275,7 +275,7 @@ $(document).ready(function(){
 
   $('.category_select').on('click' , function(e) {
 
-    show_animation();
+    //show_animation();
     var $el = $(this);
     var $parent_li = $el.parent();
     var url = $el.attr('href');
@@ -286,39 +286,15 @@ $(document).ready(function(){
     //setTimeout('hide_animation()', 500);
 
     $.post('/category/get-magazines-by-category',{ category_id:category_id }, function (res) {
-
-        //console.log(res);
-        //loop through array of objects and grab the data
-        $('div.magazineContainer').remove();
+      //console.log(res);
+        $('div.parent_magazines_container').remove();
 
         res.forEach( function (arrayItem) {
 
-          //var x = arrayItem.magazine_name;
-        var magazine_url='/'+arrayItem.magazine_slug+'/'+arrayItem.id;
-
-        var html = '<div class="magazineContainer">'
-                    +'<h3 class="magazineMainCategoryHeight">'
-                    +'<a href="'+magazine_url+'">'+arrayItem.magazine_name+'</a>'
-                    +'</h3>'
-                    +'<div class="magazineImage">'
-                    +'<a href="'+magazine_url+'" title="'+arrayItem.magazine_name+'" target>'
-                    +'<span id="">'
-                    +'<img src="'+arrayItem.img_thumb_path+'" alt="'+arrayItem.magazine_name+'" title="'+arrayItem.magazine_name+'">'
-                    +'</span>'
-                    +'</a>'
-                    +'</div>' 
-                    +'</div>';
-
-        //   var html = '<li><a href="javascript:void(0);" data-id="'+v.id+'">'+v.name+'</a></li>'
-        //   $('.list_chooser_widget.category')
-        //     .find('.list_chooser.selected')
-        //     .find('ul')
-        //     .append(html);
-        $('#magazine_container').append(html);
-
+          var magazine_url='/'+arrayItem.magazine_slug+'/'+arrayItem.id;
+          var html = create_magazine_template(magazine_url,arrayItem.magazine_name,arrayItem.img_thumb_path);
+          $('.magazine_container').append(html);
       });
-        
-      setTimeout(function(){hide_animation()},100);
       
     }, 'json');
 
@@ -331,40 +307,74 @@ $(document).ready(function(){
       return false;
   });
 
-
-  function search_magazines(search_item) {
-
-    $.post('/category/get-magazines-by-category',{ search_item:search_item }, function (res) {
-
-      //send ajax request to server to search and grab the data from sql query
-
-    },'json');
-  }
-
-
   $('#search_query').keyup(function() {
-    
+
+    $('div.parent_magazines_container').empty();
     // Get search string, remove all white space
     var search_item = $(this).val().replace(/^\s+|\s+$/g,"");
     
     // If our search string consists of at least one character
-    if (search_item.length > 1) {
+    if (search_item.length > 0) {
+
+      clearTimeout($.data(this, 'timer'));      
       
-      //console.log(search_item);
-      // Run after 400 milliseconds
-      clearTimeout($.data(this, 'timer'));
-      
-        var wait = setTimeout(function() {
-        ajax_search(search)
+      var wait = setTimeout(function() {
+
+        $.post('/get-magazines',{ search_item:search_item }, function (res) {
+          var data = JSON.parse(res);
+
+          data.forEach( function (arrayItem) {
+          
+            //$('div.parent_magazines_container').empty();
+            var magazine_url='/'+arrayItem.magazine_slug+'/'+arrayItem.id;
+
+            var html = create_magazine_template(magazine_url,arrayItem.magazine_name,arrayItem.img_thumb_path);
+
+            $('.magazine_container').append(html);
+
+          });
+        });
       }, 400);
 
-        $.data(this, 'timer', wait);
+      $.data(this, 'timer', wait);
+    }
+    else {
+      $.post('/get-all-magazines', function (res) {
+        var data = JSON.parse(res);
+        console.log(data);
+        data.forEach( function (arrayItem) {
+      
+          //$('div.parent_magazines_container').empty();
+          var magazine_url='/'+arrayItem.magazine_slug+'/'+arrayItem.id;
 
+          var html = create_magazine_template(magazine_url,arrayItem.magazine_name,arrayItem.img_thumb_path);
+
+          $('.magazine_container').append(html);
+
+        });
+      });
     }
-    else
-    {
-      $(results).empty();
-    }
+
   });
+
+  function create_magazine_template(url , magazine_name , magazine_thumb_img) {
+
+    var html = '<div class="parent_magazines_container">'
+              +'<div class="magazineContainer">'
+              +'<h3 class="magazineMainCategoryHeight">'
+              +'<a href="'+url+'">'+magazine_name+'</a>'
+              +'</h3>'
+              +'<div class="magazineImage">'
+              +'<a href="'+url+'" title="'+magazine_name+'" target>'
+              +'<span id="">'
+              +'<img src="'+magazine_thumb_img+'" alt="'+magazine_name+'" title="'+magazine_name+'">'
+              +'</span>'
+              +'</a>'
+              +'</div>' 
+              +'</div>'
+              +'</div>';
+    return html;
+
+  }
 
 });

@@ -1,6 +1,5 @@
 
-  <div class="span9" style="border: 1px solid #e5e5e5; margin-top: 30px;">
-  <div id="magazine_container">
+  
       <? foreach ($magazines as $magazine) {?>
       <? $url = '/'.$magazine->magazine_slug.'/'.$magazine->id ;?>
         <div class="magazineContainer">
@@ -15,8 +14,7 @@
       </div>
 
       <? }?>
-    </div>
-</div>
+
 
 <?
       //$url = '/'.$magazine->magazine_slug.'/'.$magazine->issue.'/'.$magazine->id;

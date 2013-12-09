@@ -1,4 +1,4 @@
-<div class="span9" style="border: 1px solid #e5e5e5; margin-top: 30px;">
+
 	<? foreach ($magazines as $magazine) {?>
 	<? $url = '/'.$magazine->magazine_slug.'/'.$magazine->issue.'/'.$magazine->id;?>
 	<div class="row">
@@ -74,5 +74,3 @@
 			<h4 style="text-decoration:underline;">Popular Magazines</h4>
 		</div>
 	</div>
-
-</div>

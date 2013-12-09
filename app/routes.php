@@ -42,3 +42,4 @@ Route::post('/search-magazine' , 'HomeController@search');
 //search based on category and magazine
 Route::post('/category/get-magazines-by-category' , 'SearchController@categorySearch');
 Route::post('/get-magazines' , 'SearchController@magazineSearch');
+Route::post('/get-all-magazines' , 'SearchController@getAllMagazines');

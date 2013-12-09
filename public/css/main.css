@@ -1,6 +1,7 @@
 body {
    padding-top: 40px;
    overflow-x: hidden;
+   background-image: url('/css/img/bg.png');
 }
  
 .form-signup, .form-signin {

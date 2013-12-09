@@ -27,7 +27,7 @@
 
   <!--header part end here-->
     <br><br>
-     <div class="navbar navbar-inverse navbar-fixed-top">
+     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
          <div class="container">
             <ul class="nav"> 
@@ -111,8 +111,10 @@
       <? }?>
     </ul>
   </div>
-    <div class="parent_magazine_container">
+    <div class="span9 magazine_container" style="margin-top: 30px;">
+      <div class="parent_magazines_container">
        {{ $content }}
+       </div>
     </div>
     </div>
     <br><br><br>

@@ -1,0 +1,1858 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"maga",
+				"magazine_name"
+			],
+			[
+				"category",
+				"category_id"
+			],
+			[
+				"re",
+				".removeAttr"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"create",
+				"createThumbnail"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"form",
+				"form_data"
+			],
+			[
+				"file",
+				"files"
+			],
+			[
+				"actu",
+				"actual_path"
+			],
+			[
+				"fade",
+				"fadeOut"
+			],
+			[
+				"dele",
+				"delete_image"
+			],
+			[
+				"image",
+				"imageUrl"
+			],
+			[
+				"del",
+				"delete"
+			],
+			[
+				"chil",
+				"child_image"
+			],
+			[
+				"med",
+				"media_option_id"
+			],
+			[
+				"medi",
+				"media_option_id"
+			],
+			[
+				"lis",
+				"listing_title"
+			],
+			[
+				"final",
+				"final_url"
+			],
+			[
+				"data",
+				"data-affinity"
+			],
+			[
+				"prop",
+				"property"
+			],
+			[
+				"dat",
+				"data"
+			],
+			[
+				"da",
+				"data"
+			],
+			[
+				"i",
+				"items"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"sort",
+				"sort_order"
+			],
+			[
+				"sor",
+				"sort_order"
+			],
+			[
+				"rem",
+				"remove"
+			],
+			[
+				"hide",
+				"hide_animation"
+			],
+			[
+				"template_t",
+				"template_template_section"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"Obj",
+				"objectToArray"
+			],
+			[
+				"gett",
+				"gettype"
+			],
+			[
+				"siz",
+				"sizeOfArray"
+			],
+			[
+				"tem",
+				"template_Id"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"template",
+				"templateId"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"get",
+				"getRow"
+			],
+			[
+				"media",
+				"media_option_form"
+			],
+			[
+				"drop",
+				"dropDiv"
+			],
+			[
+				"tb",
+				"tblrow"
+			],
+			[
+				"text",
+				"textbox"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"e",
+				"eq"
+			],
+			[
+				"fisrt",
+				"first_thead_td"
+			],
+			[
+				"first",
+				"first_row"
+			],
+			[
+				"pa",
+				"parent"
+			],
+			[
+				"ro",
+				"rowObj"
+			],
+			[
+				"br",
+				"break"
+			],
+			[
+				"fin",
+				"finalQuery"
+			],
+			[
+				"st",
+				"startIndex"
+			],
+			[
+				"page",
+				"page"
+			],
+			[
+				"start",
+				"startIndex"
+			],
+			[
+				"ab",
+				"absolute_position"
+			],
+			[
+				"Key",
+				"keyword"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"ph",
+				"phrase"
+			],
+			[
+				"spli",
+				"splitCursor"
+			],
+			[
+				"split",
+				"splitPhrase"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"cont",
+				"contact_item"
+			],
+			[
+				"fi",
+				"function"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"related",
+				"related_media_list"
+			],
+			[
+				"cate",
+				"Categories"
+			],
+			[
+				"parent",
+				"parent_cat"
+			],
+			[
+				"has",
+				"hash_code"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"key",
+				"keyword_json_array"
+			],
+			[
+				"ke",
+				"keywordJSON"
+			],
+			[
+				"keyw",
+				"keyword_auto"
+			],
+			[
+				"last",
+				"last_keyword"
+			],
+			[
+				"new",
+				"new_keyword"
+			],
+			[
+				"a",
+				"affinity"
+			],
+			[
+				"close",
+				"closest"
+			],
+			[
+				"media_option",
+				"media_option_keyword"
+			],
+			[
+				"rel",
+				"related_keyword"
+			],
+			[
+				"au",
+				"audience_type_count"
+			],
+			[
+				"Au",
+				"AudienceScore"
+			],
+			[
+				"audi",
+				"audi_score"
+			],
+			[
+				"Se",
+				"SELECT"
+			],
+			[
+				"aud",
+				"audience_id"
+			],
+			[
+				"S",
+				"SELECT"
+			],
+			[
+				"filter",
+				"filtered_media_options"
+			],
+			[
+				"th",
+				"thumb_image_url"
+			],
+			[
+				"categr",
+				"categories_length"
+			],
+			[
+				"categories",
+				"categories_length"
+			],
+			[
+				"ty",
+				"typeof"
+			],
+			[
+				"paren",
+				"parent_category"
+			],
+			[
+				"media_",
+				"media_option"
+			],
+			[
+				"te",
+				"temp_array"
+			],
+			[
+				"ca",
+				"category_name"
+			],
+			[
+				"wh",
+				"where_string_part"
+			],
+			[
+				"cat",
+				"cat_count"
+			],
+			[
+				"where",
+				"where_string"
+			],
+			[
+				"pare",
+				"parent_name"
+			],
+			[
+				"upda",
+				"updated_post_order"
+			],
+			[
+				"old",
+				"old_order_id"
+			],
+			[
+				"Media",
+				"MediaOption"
+			],
+			[
+				"em",
+				"emails"
+			],
+			[
+				"com",
+				"company_city"
+			],
+			[
+				"ema",
+				"emails"
+			],
+			[
+				"preg_",
+				"preg_replace"
+			],
+			[
+				"pre",
+				"preg_match_all"
+			],
+			[
+				"compan",
+				"company_city"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"head",
+				"head_detail"
+			],
+			[
+				"comp",
+				"company_head"
+			],
+			[
+				"preg",
+				"preg_split"
+			],
+			[
+				"preg_mat",
+				"preg_match"
+			],
+			[
+				"agen",
+				"agency_result_array"
+			],
+			[
+				"pr",
+				"print_r"
+			],
+			[
+				"strip",
+				"strip_tags"
+			],
+			[
+				"age",
+				"agency_detail_data"
+			],
+			[
+				"agency_det",
+				"agency_detail_temp"
+			],
+			[
+				"agency_de",
+				"agency_detail_temp"
+			],
+			[
+				"agency_detail_",
+				"agency_detail_data"
+			],
+			[
+				"agec",
+				"agency_detail"
+			],
+			[
+				"name",
+				"name_of_agency"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"a_",
+				"a_ids"
+			],
+			[
+				"agency",
+				"agency_urls"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/home.php",
+			"settings":
+			{
+				"buffer_size": 732,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/main.js",
+			"settings":
+			{
+				"buffer_size": 10640,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 3810,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/SearchController.php",
+			"settings":
+			{
+				"buffer_size": 2058,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/magazine_pdf.php",
+			"settings":
+			{
+				"buffer_size": 98,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 1843,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/main.blade.php",
+			"settings":
+			{
+				"buffer_size": 3664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/users/dashboard.blade.php",
+			"settings":
+			{
+				"buffer_size": 2852,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/MagazineController.php",
+			"settings":
+			{
+				"buffer_size": 1975,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/magazine_details.php",
+			"settings":
+			{
+				"buffer_size": 2606,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/front_end/main.blade.php",
+			"settings":
+			{
+				"buffer_size": 5224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/categories/index.php",
+			"settings":
+			{
+				"buffer_size": 701,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/MagazineUploadsController.php",
+			"settings":
+			{
+				"buffer_size": 2445,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "composer.json",
+			"settings":
+			{
+				"buffer_size": 722,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/magazine/list_magazine.php",
+			"settings":
+			{
+				"buffer_size": 805,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/CategoryController.php",
+			"settings":
+			{
+				"buffer_size": 880,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/categories/add_new_category.php",
+			"settings":
+			{
+				"buffer_size": 271,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/magazine/index.php",
+			"settings":
+			{
+				"buffer_size": 115,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/magazine/uploadPdfImage.php",
+			"settings":
+			{
+				"buffer_size": 2669,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/UsersController.php",
+			"settings":
+			{
+				"buffer_size": 1895,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/main.css",
+			"settings":
+			{
+				"buffer_size": 10318,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/vendor/bootstrap.min.css",
+			"settings":
+			{
+				"buffer_size": 106006,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/prasoon/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/prasoon/www/ezine/app/database/migrations/2013_11_27_113602_magazine_category.php",
+		"/home/prasoon/www/ezine/public/css/vendor/bootstrap.min.css",
+		"/home/prasoon/www/ezine/composer.json",
+		"/home/prasoon/www/ezine/app/models/MagazineTable.php",
+		"/home/prasoon/www/ezine/app/models/MagazinePdfTable.php",
+		"/home/prasoon/www/ezine/app/database/migrations/2013_11_30_162615_create_magazine_images_table.php",
+		"/home/prasoon/www/ezine/app/database/migrations/2013_11_30_163200_create_magazine_table.php",
+		"/home/prasoon/www/ezine/app/views/layouts/front_end/main.php",
+		"/home/prasoon/www/ezine/app/views/categories/add_new_category.php",
+		"/home/prasoon/www/ezine/app/config/database.php",
+		"/home/prasoon/www/ezine/public/js/main.js",
+		"/home/prasoon/www/ezine/public/js/demo.js",
+		"/home/prasoon/www/ezine/app/config/app.php",
+		"/home/prasoon/www/ezine/app/views/hello.php",
+		"/home/prasoon/www/media_ant/app/views/media_option/new.php",
+		"/home/prasoon/www/media_ant/app/controllers/MediaOptionController.php",
+		"/home/prasoon/www/media_ant/app/views/media_option/index.php",
+		"/home/prasoon/www/media_ant/public/uploads/media_option/file/121/cover (copy).jpg",
+		"/home/prasoon/www/media_ant/public/js/xls.js",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_11_20_115619_add_sort_order_col_to_media_option_category_page_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_11_20_115457_add_sort_order_col_to_media_option_category_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_11_13_084825_add_end_consumer_fields_to_media_option_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_11_18_092903_add_sort_order_column.php",
+		"/home/prasoon/Downloads/media_option_pages (1).sql",
+		"/home/prasoon/Downloads/media_option_template_section.cs",
+		"/home/prasoon/www/media_ant/app/controllers/RateBibleController.php",
+		"/home/prasoon/www/laravel/app/views/hello.php",
+		"/home/prasoon/www/media_ant/app/views/media_option/show.php",
+		"/home/prasoon/www/media_ant/app/controllers/TemplateController.php",
+		"/home/prasoon/www/media_ant/app/controllers/CloneTemplateController.php",
+		"/home/prasoon/www/media_ant/app/models/cloneTemplate.php",
+		"/home/prasoon/www/media_ant/app/models/Template.php",
+		"/home/prasoon/www/media_ant/app/config/app.php",
+		"/home/prasoon/www/media_ant/app/controllers/TemplateClone.php",
+		"/home/prasoon/www/media_ant/app/models/TemplateTableField.php",
+		"/home/prasoon/www/media_ant/app/models/MediaOption.php",
+		"/home/prasoon/www/media_ant/public/js/jszip.js",
+		"/home/prasoon/www/media_ant/app/views/home.php",
+		"/home/prasoon/www/laravel/app/config/database.php",
+		"/home/prasoon/www/laravel/app/views/hello_backup.php",
+		"/home/prasoon/www/laravel/app/controllers/HomeController.php",
+		"/home/prasoon/Downloads/vanilla.js",
+		"/home/prasoon/Desktop/home wifi",
+		"/home/prasoon/www/media_ant/app/routes.php",
+		"/home/prasoon/www/media_ant/app/controllers/SearchController.php",
+		"/home/prasoon/www/media_ant/app/views/googleSearchPage.php",
+		"/home/prasoon/my_cool_app/my_cool_app.js",
+		"/home/prasoon/Desktop/tester.php",
+		"/home/prasoon/www/media_ant/app/views/media_option/layout.php",
+		"/home/prasoon/www/media_ant/public/js/main.js",
+		"/home/prasoon/Desktop/magstermagsurl2.php",
+		"/home/prasoon/www/media_ant/app/views/recommendation/index.php",
+		"/home/prasoon/www/media_ant/public/css/main.css",
+		"/home/prasoon/www/media_ant/app/controllers/RecommendationController.php",
+		"/home/prasoon/www/media_ant/app/controllers/RelatedKeywordController.php",
+		"/home/prasoon/www/media_ant/app/views/related_keyword/index.php",
+		"/home/prasoon/Desktop/ooh-media-advertising-india.html",
+		"/home/prasoon/www/media_ant/app/controllers/CategoryController.php",
+		"/home/prasoon/www/media_ant/app/views/media_option/list.php",
+		"/home/prasoon/www/media_ant/app/models/Category.php",
+		"/home/prasoon/www/media_ant/app/views/map.php",
+		"/home/prasoon/www/media_ant/app/scripts/create_images.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_08_21_094527_add_media_option_id_keyword_id_unique_to_media_option_keyword_table.php",
+		"/home/prasoon/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/prasoon/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/prasoon/www/media_ant/app/views/related_keyword/new.php",
+		"/home/prasoon/www/media_ant/app/models/MediaOptionKeyword.php",
+		"/home/prasoon/www/media_ant/app/models/AudienceScore.php",
+		"/home/prasoon/www/media_ant/app/views/related_keyword/list.php",
+		"/home/prasoon/www/media_ant/app/views/related_keyword/keyword/new.php",
+		"/home/prasoon/www/media_ant/app/views/category/new.php",
+		"/home/prasoon/www/media_ant/app/models/Keyword.php",
+		"/home/prasoon/Desktop/mas.css",
+		"/home/prasoon/Desktop/poi.js",
+		"/home/prasoon/www/media_ant/app/views/audience_score/index.php",
+		"/home/prasoon/www/media_ant/app/controllers/AudienceScoreController.php",
+		"/home/prasoon/www/media_ant/app/scripts/category_table_seeding_query",
+		"/home/prasoon/www/media_ant/app/scripts/audience.sql",
+		"/home/prasoon/Downloads/catmag (1).js",
+		"/home/prasoon/www/media_ant/app/scripts/category_media_option_mapper.php",
+		"/home/prasoon/Downloads/catmag (2).js",
+		"/home/prasoon/www/media_ant/app/controllers/ThumbnailController.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_08_07_103612_add_primary_keys_media_option_id_and_cat_id_on_media_option_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_08_06_071136_add_has_child_column_to_category_table.php",
+		"/home/prasoon/www/media_ant/app/scripts/list_order_updater.php",
+		"/home/prasoon/libpeerconnection.log",
+		"/home/prasoon/www/media_ant/app/scripts/afaq_scaper.php",
+		"/home/prasoon/www/media_ant/helo.txt",
+		"/home/prasoon/helo.txt",
+		"/home/prasoon/www/media_ant/app/scripts/testxml4.php",
+		"/home/prasoon/www/media_ant/app/scripts/parse_images.php",
+		"/home/prasoon/scraper/parse_site.php",
+		"/home/prasoon/helotxt",
+		"/home/prasoon/scraper/justdial.php",
+		"/home/prasoon/scraper/db.php",
+		"/home/prasoon/scraper/Client.php",
+		"/home/prasoon/scraper/bing.php",
+		"/home/prasoon/scraper/importer.php",
+		"/home/prasoon/scraper/index.php",
+		"/home/prasoon/scraper/test.php",
+		"/home/prasoon/scraper/scrape_site.php",
+		"/home/prasoon/Desktop/CATEGORY_TABLE FILLING",
+		"/home/prasoon/Downloads/audience.sql",
+		"/home/prasoon/Desktop/keywords query",
+		"/home/prasoon/www/media_ant/app/scripts/high_affinity_keyword_data_seeder.php",
+		"/home/prasoon/www/media_ant/highaffinitylog.txt",
+		"/home/prasoon/www/media_ant/app/scripts/audi_score_media_option_mapper.php",
+		"/home/prasoon/www/media_ant/app/scripts/low_affinity_keyword_data_seeder.php",
+		"/home/prasoon/Downloads/high affinity",
+		"/home/prasoon/Downloads/low affinity",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_30_153000_set_keyword_to_unique_on_keywords_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_04_145522_set_name_to_unique_on_category_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_30_064322_create_media_option_view_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_30_112205_create_media_option_keyword_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_18_135249_create_media_option_table_field_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_30_105909_create_keywords_table.php",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_26_114128_create_media_option_files_table.php",
+		"/home/prasoon/Downloads/audiance table entry query",
+		"/home/prasoon/www/media_ant/mylog.txt",
+		"/home/prasoon/Downloads/audi_score_final_for_parsing (2).js",
+		"/home/prasoon/Downloads/audi_score_final_for_parsing (1).js",
+		"/home/prasoon/Downloads/audi_score_final_for_parsing.js",
+		"/home/prasoon/www/media_ant/app/scripts/mainjs_parser.php",
+		"/home/prasoon/Downloads/final.js",
+		"/home/prasoon/www/media_ant/MYLOG.TXT",
+		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_29_113449_drop_name_as_unique_on_category_table.php",
+		"/home/prasoon/www/media_ant/app/models/MediaOptionFile.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"magazineMainCategoryHeight",
+			"attr",
+			"textarea",
+			"uploadImage",
+			"hr",
+			".set",
+			"cb",
+			".save()",
+			"sync",
+			"resource",
+			"mediaOptionAutoSaveTick",
+			"edit",
+			"media_option_form",
+			"delete_image",
+			"imageUpload",
+			"image_select",
+			"upload_image",
+			"public_path()",
+			"delete_image",
+			"parent",
+			"delete_image",
+			"this",
+			"delete_image",
+			"delete_media_option_table",
+			"parent",
+			"delete_image",
+			"post",
+			"media-option",
+			"delete_image",
+			"delete image",
+			"image_copy",
+			"form_copy",
+			"image_copy",
+			"edit",
+			"media-option",
+			"CloneMediaOptionController.php",
+			"template",
+			"media-option",
+			"uploadFile",
+			"upload_image",
+			"get-selected-fields",
+			"save_media_option_table",
+			"mongo",
+			"get-selected-fields",
+			"fillNomenTable",
+			"template_table_id",
+			"Advertise in ",
+			"updateNomenFields",
+			"listing_title",
+			"HEAD",
+			"in_cart",
+			"addOptionToCart",
+			"in_cart",
+			"cart",
+			"/rate-bible/get-newspaper-List",
+			"edit",
+			"selected_rate_bibles",
+			"in_cart",
+			"tinyMCE.activeEditor.setContent(data);",
+			"in_cart",
+			"addOptionToCart",
+			"in_cart",
+			"add_media_option_to_cart",
+			"addOptionToCart",
+			"in_cart",
+			"ul",
+			"rate_bible_selector",
+			"ui-sortable",
+			"rate_bible_selector",
+			"addOptionToCart",
+			"rate_bible_selector",
+			"save-category-pages",
+			"save_media_option_category_page",
+			"get-selected-sections",
+			"get-selected-tables",
+			"edit",
+			"table_types",
+			"edit",
+			"template",
+			"save_media_option_category",
+			"save_template_table_fields",
+			"head",
+			"rate_bible",
+			"rate_bi",
+			"clone",
+			"each",
+			"send_rate",
+			"show_animation();",
+			"send_rate",
+			"clone",
+			"send_rate",
+			"trigger",
+			"mediaOptionAutoSaveTick",
+			"save_media_option_category",
+			"edit",
+			"saveTable",
+			"edit",
+			"media_option",
+			"form_link_btn save_template_table_fields\nform_link_btn save_template_table_fields",
+			"main.js",
+			"edit",
+			"template",
+			"sql_get_template_id",
+			"newTemplate_Name",
+			"Template",
+			"TemplateController",
+			"cloneTemplate",
+			"DB",
+			"selected_cats_str",
+			"DB",
+			"db",
+			"insert",
+			"db",
+			"cloneTemplate.php",
+			"DB",
+			"template",
+			"templateClone",
+			"post",
+			"propagation",
+			"template",
+			"cloneTemplate",
+			"template",
+			"excelUpload",
+			"object.size",
+			"size",
+			"object.size",
+			"for",
+			"tarea"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			",",
+			":",
+			"\\n\"",
+			"\",\"",
+			"\"\\n",
+			"\\'",
+			". ",
+			"",
+			";",
+			"; \\n $audience_score->",
+			"",
+			"\\n\\n",
+			"\\n$var",
+			",",
+			",];",
+			",]",
+			"=[",
+			"=",
+			",",
+			"",
+			",",
+			"",
+			"'",
+			"','",
+			",",
+			"",
+			"e",
+			"',now(),now()),",
+			"'",
+			"(",
+			",];",
+			"','",
+			"''",
+			"=['",
+			",",
+			"];",
+			"]",
+			"','",
+			",",
+			"Income Level",
+			"Lifestage",
+			"Occupation",
+			"lifestage",
+			",",
+			"];",
+			"=",
+			"[",
+			"\\n",
+			"@",
+			"",
+			"4180224102278710112,",
+			",];",
+			",];l",
+			",",
+			" ",
+			"\\n$var",
+			"",
+			" ",
+			"old_id",
+			"'",
+			"`",
+			"",
+			"\\n `old_id` LIKE  '",
+			"%` , or\\n",
+			"% ,",
+			"];\\n",
+			"\\n];",
+			"];",
+			",",
+			",];",
+			"\\n$var",
+			" ",
+			"\\n$var",
+			"/n$var",
+			"\\n$var",
+			" ",
+			"=[",
+			"var",
+			")",
+			" ),",
+			" ~",
+			",",
+			"',",
+			" ',",
+			" @",
+			",'",
+			"#",
+			"(",
+			"file",
+			"",
+			"com/",
+			"1 ",
+			"\\n",
+			"var",
+			" ",
+			"",
+			"=",
+			",",
+			"$var",
+			"\\n\\n",
+			"[",
+			",",
+			"",
+			"',",
+			"),\\n",
+			"",
+			"301 ",
+			"/",
+			";\\n",
+			"id =",
+			" WHERE template_section_id",
+			"'#",
+			"='",
+			"=",
+			"6",
+			"UPDATE media_option_template_section SET tab_name=",
+			"UPDATE media_option_template_section SET tab_name='",
+			";\\n",
+			"\\n;"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/prasoon/www/ezine"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/home.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 732,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8807,
+								8807
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 5554.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								861,
+								861
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/SearchController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2058,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1938,
+								1938
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/home/magazine_pdf.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 98,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1843,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1842,
+								1842
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 330.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/layouts/main.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1797,
+								1797
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 867.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/users/dashboard.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2852,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								688,
+								688
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 856.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/MagazineController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1563,
+								1563
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/views/home/magazine_details.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2606,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/views/layouts/front_end/main.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4333,
+								4333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1649.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/categories/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 701,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/controllers/MagazineUploadsController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1571,
+								1571
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 340.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "composer.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 722,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								411,
+								411
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/views/magazine/list_magazine.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 805,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								484,
+								484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/controllers/CategoryController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								575,
+								575
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/views/categories/add_new_category.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 271,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								263,
+								263
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/views/magazine/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/views/magazine/uploadPdfImage.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2669,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2451,
+								2451
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/controllers/UsersController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1895,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1437,
+								1437
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 431.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "public/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "public/css/vendor/bootstrap.min.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 106006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12533,
+								12533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 98314.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main",
+				"public/js/main.js"
+			],
+			[
+				"mai",
+				"public/js/main.js"
+			],
+			[
+				"boot",
+				"public/css/vendor/bootstrap.min.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"~/www/media_ant/media_dev.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 264.0,
+	"status_bar_visible": false,
+	"template_settings":
+	{
+	}
+}
