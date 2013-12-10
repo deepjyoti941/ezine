@@ -531,7 +531,7 @@
 			"file": "public/js/main.js",
 			"settings":
 			{
-				"buffer_size": 10102,
+				"buffer_size": 10138,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,15 +555,7 @@
 			"file": "app/views/home/show_flipbook.php",
 			"settings":
 			{
-				"buffer_size": 619,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/js/flipbook.js",
-			"settings":
-			{
-				"buffer_size": 3503,
+				"buffer_size": 768,
 				"line_ending": "Unix"
 			}
 		},
@@ -571,7 +563,15 @@
 			"file": "public/css/flipbook.css",
 			"settings":
 			{
-				"buffer_size": 1320,
+				"buffer_size": 1381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/flipbook.js",
+			"settings":
+			{
+				"buffer_size": 3486,
 				"line_ending": "Unix"
 			}
 		},
@@ -659,7 +659,7 @@
 			"file": "app/controllers/MagazineUploadsController.php",
 			"settings":
 			{
-				"buffer_size": 2445,
+				"buffer_size": 2489,
 				"line_ending": "Unix"
 			}
 		},
@@ -707,7 +707,7 @@
 			"file": "app/views/magazine/uploadPdfImage.php",
 			"settings":
 			{
-				"buffer_size": 2669,
+				"buffer_size": 2592,
 				"line_ending": "Unix"
 			}
 		},
@@ -723,7 +723,7 @@
 			"file": "public/css/main.css",
 			"settings":
 			{
-				"buffer_size": 10318,
+				"buffer_size": 10319,
 				"line_ending": "Unix"
 			}
 		},
@@ -732,6 +732,14 @@
 			"settings":
 			{
 				"buffer_size": 106006,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/vendor/turn.js",
+			"settings":
+			{
+				"buffer_size": 43786,
 				"line_ending": "Unix"
 			}
 		}
@@ -909,6 +917,8 @@
 		"find_history":
 		[
 			"renderPage",
+			"zoom",
+			"renderPage",
 			".turn",
 			"magazineMainCategoryHeight",
 			"attr",
@@ -1033,8 +1043,6 @@
 			"cloneTemplate",
 			"template",
 			"excelUpload",
-			"object.size",
-			"size",
 			"object.size"
 		],
 		"highlight": true,
@@ -1179,7 +1187,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1217,15 +1225,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10102,
+						"buffer_size": 10138,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8320,
-								8320
+								717,
+								717
 							]
 						],
 						"settings":
@@ -1236,7 +1244,7 @@
 							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5321.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1254,8 +1262,8 @@
 						"selection":
 						[
 							[
-								2947,
-								2947
+								3154,
+								3154
 							]
 						],
 						"settings":
@@ -1264,7 +1272,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 14.0,
-						"translation.y": 1280.0,
+						"translation.y": 1111.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1282,8 +1290,8 @@
 						"selection":
 						[
 							[
-								1062,
-								1062
+								1010,
+								1010
 							]
 						],
 						"settings":
@@ -1292,7 +1300,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 153.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1303,15 +1311,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 619,
+						"buffer_size": 768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								386,
-								386
+								638,
+								638
 							]
 						],
 						"settings":
@@ -1329,47 +1337,19 @@
 				},
 				{
 					"buffer": 5,
-					"file": "public/js/flipbook.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3503,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3283,
-								3283
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1095.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "public/css/flipbook.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1320,
+						"buffer_size": 1381,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								148,
+								148
 							]
 						],
 						"settings":
@@ -1380,6 +1360,35 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/js/flipbook.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								189,
+								189
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1670,15 +1679,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2445,
+						"buffer_size": 2489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1571,
-								1571
+								1780,
+								1780
 							]
 						],
 						"settings":
@@ -1687,7 +1696,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 714.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1839,15 +1848,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2669,
+						"buffer_size": 2592,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2451,
-								2451
+								2323,
+								2323
 							]
 						],
 						"settings":
@@ -1856,7 +1865,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 561.0,
+						"translation.y": 516.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1895,15 +1904,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10318,
+						"buffer_size": 10319,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								206,
-								206
+								10318,
+								10318
 							]
 						],
 						"settings":
@@ -1913,7 +1922,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7735.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1940,6 +1949,34 @@
 							"syntax": "Packages/CSS/CSS.tmLanguage"
 						},
 						"translation.x": 98314.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "public/js/vendor/turn.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 43786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1991,20 +2028,36 @@
 		"selected_items":
 		[
 			[
+				"",
+				"public/js/flipbook.js"
+			],
+			[
+				"main",
+				"public/js/main.js"
+			],
+			[
+				"flip",
+				"public/js/flipbook.js"
+			],
+			[
+				"main.css",
+				"public/css/main.css"
+			],
+			[
+				"turn",
+				"public/js/vendor/turn.js"
+			],
+			[
+				"fli",
+				"public/js/flipbook.js"
+			],
+			[
 				"ro",
 				"app/routes.php"
 			],
 			[
 				"rout",
 				"app/routes.php"
-			],
-			[
-				"fli",
-				"app/controllers/FlipbookController.php"
-			],
-			[
-				"main",
-				"public/js/main.js"
 			],
 			[
 				"mai",

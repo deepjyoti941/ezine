@@ -90,6 +90,7 @@ $(document).ready(function(){
       , file_select = $('#file_select');
 
     var form_data = new FormData();
+    //alert($el.attr('magazine_id'));
 	form_data.append('magazine_id', +$el.attr('magazine_id'));
 
     for (var i = 0; i < files_to_upload.length; i++) {
@@ -99,7 +100,6 @@ $(document).ready(function(){
 
     uploadFile(form_data, '/upload-pdf', function () {
     	
- 
     });
     return false;
   });

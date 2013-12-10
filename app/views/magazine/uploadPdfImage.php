@@ -59,7 +59,7 @@
 		<br>
 		<div class="row">
 			<div class="span3" style="margin-left:20px;">
-				<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="3000000">
+				
 		      	<label for="file_upload">Choose pdf File*</label>
 		      	<input type="file" id="file_select" name="file_select" multiple>
 		      	<a href="javascript:void(0);" class="btn btn-primary upload_pdf" disabled> Upload PDF </a>

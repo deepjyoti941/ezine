@@ -12,19 +12,17 @@
 		var firstPagesRendered = false;
 		var pdf = null
         	,pageNum = 1
-        	,scale = 0.8;
+        	,scale = 0.45;
 
 
         function renderPage(num) {
 
 		    pdf.getPage(num).then(function(page) {
-
-		        var scale = 0.8;
+		        var scale = 0.41;
 		        var viewport = page.getViewport(scale);
-
-		        //
-		        // Prepare canvas using PDF page dimensions
-		        //
+		        
+		        //Prepare canvas using PDF page dimensions
+		       
 				var canvasID = 'canv' + num;
 		        var canvas = document.getElementById(canvasID);
 				if (canvas == null) return;
@@ -32,16 +30,14 @@
 		        canvas.height = viewport.height;
 		        canvas.width = viewport.width;
 
-		        //
-		        // Render PDF page into canvas context
-		        //
+		        // Render the PDF page into canvas context
 		        var renderContext = {
 		          canvasContext: context,
 		          viewport: viewport
 		        };
 		        page.render(renderContext);
 
-		        // Update page counters
+		        // Update the page counters i.e grab it from the label with id of page-number and span with id number-pages
 		        document.getElementById('page-number').textContent = pageNum;
 		        document.getElementById('number-pages').textContent = pdf.numPages;
 	        }
@@ -50,20 +46,18 @@
 
 		// Adds the pages that the book will need
 		function addPage(page, book) {
-			// 	First check if the page is already in the book
+			// 	First checking if the page is already in the book
 			if (!book.turn('hasPage', page)) {
 			
 				// Create an element for this page
 				var element = $('<div />', {'class': 'page '+((page%2==0) ? 'odd' : 'even'), 'id': 'page-'+page})
 				element.html('<div class="data"><canvas id="canv' + page + '"></canvas></div>');
-				// element.html('<div><i>test</i></div>');
 				// If not then add the page
 				book.turn('addPage', element, page);
-				// renderPage(page);
-				//*/
 			}
 		}
 
+		//creating workspace for pdf file
 		PDFJS.disableWorker = true;
 	
 		PDFJS.getDocument(url).then(function(pdfDoc) {
@@ -77,7 +71,7 @@
 			pages: numberOfPages,
 			elevation: 50,
 			gradients: !$.isTouch,
-			// display: 'single',
+			display: 'double',
 			when: {
 				turning: function(e, page, view) {
 
@@ -87,9 +81,7 @@
 					// Check if each page is within the book
 					for (page = range[0]; page<=range[1]; page++) {
 						addPage(page, $(this));
-						//renderPage(page);
 					};
-
 				},
 
 				turned: function(e, page) {
@@ -128,7 +120,6 @@
 				rendered[page] = true;
 			};
 			firstPagesRendered = true;
-
 		});
 
 	});

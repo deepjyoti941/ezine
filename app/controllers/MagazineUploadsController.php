@@ -55,8 +55,10 @@ class MagazineUploadsController extends BaseController {
 
 		$input = Input::get();
 	    $magazine_id = $input['magazine_id'];
+	    print_r($input);
 
 	    $files = Input::file('file_select');
+	    print_r($files);
 	    $files = [$files]; // multi file upload consistency :| (file_select[] name i.e.)
 	    
 	    foreach ($files as $file) {
