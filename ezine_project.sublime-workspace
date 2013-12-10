@@ -4,8 +4,20 @@
 		"selected_items":
 		[
 			[
+				"$ma",
+				"$magazine_id"
+			],
+			[
+				"se",
+				"select"
+			],
+			[
 				"maga",
-				"magazine_name"
+				"magazine_id"
+			],
+			[
+				"show",
+				"show_flipbook"
 			],
 			[
 				"category",
@@ -502,18 +514,6 @@
 			[
 				"name",
 				"name_of_agency"
-			],
-			[
-				"prin",
-				"print_r"
-			],
-			[
-				"a_",
-				"a_ids"
-			],
-			[
-				"agency",
-				"agency_urls"
 			]
 		]
 	},
@@ -531,7 +531,7 @@
 			"file": "public/js/main.js",
 			"settings":
 			{
-				"buffer_size": 10640,
+				"buffer_size": 10102,
 				"line_ending": "Unix"
 			}
 		},
@@ -544,10 +544,66 @@
 			}
 		},
 		{
+			"file": "app/views/home/magazine_details.php",
+			"settings":
+			{
+				"buffer_size": 2542,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/home/show_flipbook.php",
+			"settings":
+			{
+				"buffer_size": 619,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/flipbook.js",
+			"settings":
+			{
+				"buffer_size": 3503,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/css/flipbook.css",
+			"settings":
+			{
+				"buffer_size": 1320,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/FlipbookController.php",
+			"settings":
+			{
+				"buffer_size": 167,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/routes.php",
+			"settings":
+			{
+				"buffer_size": 2007,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/BaseController.php",
+			"settings":
+			{
+				"buffer_size": 255,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/controllers/SearchController.php",
 			"settings":
 			{
-				"buffer_size": 2058,
+				"buffer_size": 2275,
 				"line_ending": "Unix"
 			}
 		},
@@ -556,14 +612,6 @@
 			"settings":
 			{
 				"buffer_size": 98,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/routes.php",
-			"settings":
-			{
-				"buffer_size": 1843,
 				"line_ending": "Unix"
 			}
 		},
@@ -588,14 +636,6 @@
 			"settings":
 			{
 				"buffer_size": 1975,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/home/magazine_details.php",
-			"settings":
-			{
-				"buffer_size": 2606,
 				"line_ending": "Unix"
 			}
 		},
@@ -723,6 +763,8 @@
 	},
 	"file_history":
 	[
+		"/home/prasoon/www/ezine/public/js/vendor/turn.js",
+		"/home/prasoon/www/ezine/public/js/vendor/pdf.js",
 		"/home/prasoon/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
 		"/home/prasoon/www/ezine/app/database/migrations/2013_11_27_113602_magazine_category.php",
 		"/home/prasoon/www/ezine/public/css/vendor/bootstrap.min.css",
@@ -848,9 +890,7 @@
 		"/home/prasoon/Downloads/audi_score_final_for_parsing.js",
 		"/home/prasoon/www/media_ant/app/scripts/mainjs_parser.php",
 		"/home/prasoon/Downloads/final.js",
-		"/home/prasoon/www/media_ant/MYLOG.TXT",
-		"/home/prasoon/www/media_ant/app/database/migrations/2013_07_29_113449_drop_name_as_unique_on_category_table.php",
-		"/home/prasoon/www/media_ant/app/models/MediaOptionFile.php"
+		"/home/prasoon/www/media_ant/MYLOG.TXT"
 	],
 	"find":
 	{
@@ -868,6 +908,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"renderPage",
+			".turn",
 			"magazineMainCategoryHeight",
 			"attr",
 			"textarea",
@@ -993,9 +1035,7 @@
 			"excelUpload",
 			"object.size",
 			"size",
-			"object.size",
-			"for",
-			"tarea"
+			"object.size"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1139,7 +1179,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1177,15 +1217,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10640,
+						"buffer_size": 10102,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8807,
-								8807
+								8320,
+								8320
 							]
 						],
 						"settings":
@@ -1196,7 +1236,7 @@
 							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
 						},
 						"translation.x": 0.0,
-						"translation.y": 5554.0,
+						"translation.y": 5321.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1214,8 +1254,36 @@
 						"selection":
 						[
 							[
-								861,
-								861
+								2947,
+								2947
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 14.0,
+						"translation.y": 1280.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/home/magazine_details.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1062,
+								1062
 							]
 						],
 						"settings":
@@ -1224,26 +1292,195 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 204.0,
+						"translation.y": 153.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/controllers/SearchController.php",
+					"buffer": 4,
+					"file": "app/views/home/show_flipbook.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2058,
+						"buffer_size": 619,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1938,
-								1938
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "public/js/flipbook.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3283,
+								3283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"word_separators": "./\\\\()\\\"\\'-:,.;<>~!@#%^&*|+=[]{}`~?"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1095.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "public/css/flipbook.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1320,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/FlipbookController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 167,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2007,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1837,
+								1837
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "app/controllers/BaseController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								245,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/controllers/SearchController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2240,
+								2240
 							]
 						],
 						"settings":
@@ -1252,13 +1489,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 228.0,
+						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 11,
 					"file": "app/views/home/magazine_pdf.php",
 					"semi_transient": false,
 					"settings":
@@ -1285,34 +1522,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1843,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1842,
-								1842
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 330.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 12,
 					"file": "app/views/layouts/main.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -1324,8 +1534,8 @@
 						"selection":
 						[
 							[
-								1797,
-								1797
+								2354,
+								2354
 							]
 						],
 						"settings":
@@ -1341,7 +1551,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 13,
 					"file": "app/views/users/dashboard.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -1369,7 +1579,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 14,
 					"file": "app/controllers/MagazineController.php",
 					"semi_transient": false,
 					"settings":
@@ -1381,8 +1591,8 @@
 						"selection":
 						[
 							[
-								1563,
-								1563
+								1226,
+								1226
 							]
 						],
 						"settings":
@@ -1391,41 +1601,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 57.0,
+						"translation.y": 481.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "app/views/home/magazine_details.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2606,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								143,
-								143
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 10,
+					"buffer": 15,
 					"file": "app/views/layouts/front_end/main.blade.php",
 					"semi_transient": false,
 					"settings":
@@ -1454,7 +1636,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 16,
 					"file": "app/views/categories/index.php",
 					"semi_transient": false,
 					"settings":
@@ -1483,7 +1665,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 17,
 					"file": "app/controllers/MagazineUploadsController.php",
 					"semi_transient": false,
 					"settings":
@@ -1505,13 +1687,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 340.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 18,
 					"file": "composer.json",
 					"semi_transient": false,
 					"settings":
@@ -1539,7 +1721,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 19,
 					"file": "app/views/magazine/list_magazine.php",
 					"semi_transient": false,
 					"settings":
@@ -1568,7 +1750,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 20,
 					"file": "app/controllers/CategoryController.php",
 					"semi_transient": false,
 					"settings":
@@ -1580,8 +1762,8 @@
 						"selection":
 						[
 							[
-								575,
-								575
+								432,
+								432
 							]
 						],
 						"settings":
@@ -1590,13 +1772,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 102.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 21,
 					"file": "app/views/categories/add_new_category.php",
 					"semi_transient": false,
 					"settings":
@@ -1623,7 +1805,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
+					"buffer": 22,
 					"file": "app/views/magazine/index.php",
 					"semi_transient": false,
 					"settings":
@@ -1652,7 +1834,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 18,
+					"buffer": 23,
 					"file": "app/views/magazine/uploadPdfImage.php",
 					"semi_transient": false,
 					"settings":
@@ -1680,7 +1862,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 24,
 					"file": "app/controllers/UsersController.php",
 					"semi_transient": false,
 					"settings":
@@ -1708,7 +1890,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 25,
 					"file": "public/css/main.css",
 					"semi_transient": false,
 					"settings":
@@ -1737,7 +1919,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 26,
 					"file": "public/css/vendor/bootstrap.min.css",
 					"semi_transient": false,
 					"settings":
@@ -1808,6 +1990,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"ro",
+				"app/routes.php"
+			],
+			[
+				"rout",
+				"app/routes.php"
+			],
+			[
+				"fli",
+				"app/controllers/FlipbookController.php"
+			],
 			[
 				"main",
 				"public/js/main.js"

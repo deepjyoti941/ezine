@@ -46,4 +46,13 @@ class SearchController extends BaseController {
 		return json_encode($magazines);
 	}
 
+	function getMagazinePdf() {
+
+		$magazine_id = Input::get('magazine_id');
+		$sql = "SELECT pdf_path FROM magazine_pdf WHERE magazine_id=?";
+		$pdf = DB::select($sql , [$magazine_id]);
+		return json_encode($pdf);
+
+	}
+
 }

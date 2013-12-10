@@ -33,7 +33,6 @@ Route::post('/upload-pdf' 	, 'MagazineUploadsController@uploadPdfFile');
 Route::get('/','HomeController@index');
 //Route::get('/magazine-details' , 'HomeController@magazineDetails' );
 Route::get('/{magazine_slug_url}/{mag_id}' , 'HomeController@magazineDetails' );
-Route::get('/{magazine_slug}/{issue}/{id}' , 'HomeController@showPdf');
 Route::post('/search-magazine' , 'HomeController@search');
 
 
@@ -43,3 +42,8 @@ Route::post('/search-magazine' , 'HomeController@search');
 Route::post('/category/get-magazines-by-category' , 'SearchController@categorySearch');
 Route::post('/get-magazines' , 'SearchController@magazineSearch');
 Route::post('/get-all-magazines' , 'SearchController@getAllMagazines');
+Route::post('/get-magazine-pdf' , 'SearchController@getMagazinePdf');
+
+//show flipbook from requested url
+//sitename/magagine-slug/issue/auto-increment-id
+Route::get('/{magazine_slug}/{issue}/{id}' , 'FlipbookController@showFlipbook');

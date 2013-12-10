@@ -26,11 +26,8 @@
 					<a href="#"><?= $magazine->issue ?> </a>
 				</span>
 				<span class="mgzn_details1" style="cursor:pointer;">
-					<a id="preview" href="<?= $magazine->pdf_path ?>" target="_blank">
+					<a id="preview" href="<?='/'.$magazine->magazine_slug.'/'.$magazine->issue.'/'.$magazine->id ?>" target="_blank">
 						<img src="/css/img/preview.png">
-					</a>
-					<a style="margin-left:10px;" href="/" target="_blank">
-						<img src="/css/img/subscribe.png">
 					</a>
 				</span>
 			</div>	
