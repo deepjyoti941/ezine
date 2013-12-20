@@ -1,4 +1,3 @@
-
   
       <? foreach ($magazines as $magazine) {?>
       <? $url = '/'.$magazine->magazine_slug.'/'.$magazine->id ;?>

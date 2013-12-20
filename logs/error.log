@@ -1,0 +1,7 @@
+[Wed Dec 11 12:02:27.903185 2013] [authz_core:error] [pid 5439] [client 127.0.0.1:33597] AH01630: client denied by server configuration: /home/deepjyoti/www/ezine/public/
+[Wed Dec 11 12:03:08.693202 2013] [authz_core:error] [pid 5441] [client 127.0.0.1:33600] AH01630: client denied by server configuration: /home/deepjyoti/www/ezine/public/
+[Wed Dec 11 12:05:48.614071 2013] [authz_core:error] [pid 5539] [client 127.0.0.1:33646] AH01630: client denied by server configuration: /home/deepjyoti/www/ezine/public/
+[Wed Dec 11 12:05:57.487689 2013] [authz_core:error] [pid 5540] [client 127.0.0.1:33647] AH01630: client denied by server configuration: /home/deepjyoti/www/ezine/public/
+[Fri Dec 13 14:52:22.635314 2013] [:error] [pid 4768] [client 127.0.0.1:35154] PHP Parse error:  syntax error, unexpected '$type' (T_VARIABLE) in /home/deepjyoti/www/ezine/app/controllers/FlipbookController.php on line 7, referer: http://ezine.dev/pc-magazine/12
+[Fri Dec 13 14:53:14.937372 2013] [:error] [pid 2650] [client 127.0.0.1:35163] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 101588969 bytes) in /home/deepjyoti/www/ezine/app/controllers/FlipbookController.php on line 9, referer: http://ezine.dev/pc-magazine/12
+[Fri Dec 13 14:54:19.724571 2013] [:error] [pid 4388] [client 127.0.0.1:35184] PHP Parse error:  syntax error, unexpected 'ini_set' (T_STRING), expecting function (T_FUNCTION) in /home/deepjyoti/www/ezine/app/controllers/FlipbookController.php on line 4, referer: http://ezine.dev/pc-magazine/12

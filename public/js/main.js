@@ -277,6 +277,14 @@ $(document).ready(function(){
 
     //show_animation();
     var $el = $(this);
+    console.log($el);
+    //check if the class is all if it is grab the all list
+    if(($el).hasClass('all_category')) {
+      console.log('has class and get all the category');
+    } else {
+      console.log('grab all other category list');
+    }
+
     var $parent_li = $el.parent();
     var url = $el.attr('href');
     var url_split = url.split("/");

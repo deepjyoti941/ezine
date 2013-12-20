@@ -105,13 +105,14 @@
 <div class="row">
   <div class="span3 bs-docs-sidebar" style="margin-left: 0px;">
     <ul class="nav nav-list bs-docs-sidenav affix-top">
+      <li><a class="category_select all_category" href="#"><i class="icon-chevron-right"></i>All</a></li>
       <? foreach ($magazineCategory as $category) {?>
       <? $url = '/'.$category->category_slug.'/'.$category->id ?>
         <li><a class="category_select" href="<?= $url ?>"><i class="icon-chevron-right"></i><?= $category->category_name ?></a></li>
       <? }?>
     </ul>
   </div>
-    <div class="span9 magazine_container" style="margin-top: 30px;">
+    <div class="span9 magazine_container" style="margin-top: 20px;">
       <div class="parent_magazines_container">
        {{ $content }}
        </div>

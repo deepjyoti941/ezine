@@ -10,7 +10,7 @@ body{
 	box-shadow: 0px 0px 20px gray;
 	float: left;
 	margin-left: 90px;
-	margin-top: -15px;
+	margin-top: 2px;
 }
 
 
@@ -76,3 +76,15 @@ body{
 	background-image:-o-linear-gradient(right, #FFF 95%, #ddd 100%);
 	background-image:-ms-linear-gradient(right, #FFF 95%, #ddd 100%);
 }
+
+.ui-slider .ui-slider-horizontal {
+
+	width: 571px !important;
+	height:2em !important;
+	margin-left: 398px !important;
+}
+.ui-widget-content {
+	width: 760px;
+	margin-left: 397px;
+}
+
