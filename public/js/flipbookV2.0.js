@@ -1,5 +1,9 @@
 $( document ).ready(function() {
 
+    /*dragging flip book */
+	var elementToDrag = document.getElementById('viewer');
+	draggable(elementToDrag,false);
+
 	var query  = window.location.href;
     query = query.split("/");
     var magazine_id = query[5];
@@ -77,6 +81,8 @@ $( document ).ready(function() {
 	  };
 	};
 
+
+	/*creating the progress bar start here*/
 	var ProgressBar = (function ProgressBarClosure() {
 
 	  function clamp(v, min, max) {
@@ -121,6 +127,7 @@ $( document ).ready(function() {
 
 	  return ProgressBar;
 	})();
+	/*creating the progress bar end here*/
 
 	var RenderingQueue = (function RenderingQueueClosure() {
 	  function RenderingQueue() {
@@ -257,10 +264,9 @@ $( document ).ready(function() {
 	  thumbnails: [],
 	  currentScale: kUnknownScale,
 	  currentScaleValue: null,
-	  //initialBookmark: document.location.hash.substring(1),
 	  container: null,
 	  initialized: false,
-	  // called once when the document is loaded
+
 	  initialize: function pdfViewInitialize() {
 	    this.container = document.getElementById('viewerContainer');
 	    this.initialized = true;
@@ -340,10 +346,17 @@ $( document ).ready(function() {
 	  },
 
 	  //scale it to 0.58 initialy
-	  resetIntialView: function pdfResetView() {
-	  	newScale = 0.58;
+	  resetIntialView: function pdfResetView(newScale) {
+	  	newScale = 0.54;
 	  	this.parseScale(newScale, true);
 	  	console.log(newScale);
+	  },
+
+	  zoomFromTurnJs: function zoomFromTurn() {
+	  	newScale = 1.0;
+	  	this.parseScale(newScale, true);
+	  	//console.log(newScale);
+	  	//console.log('zoom from turned');
 	  },
 
 	  //zoom in or zoom out end here
@@ -673,6 +686,8 @@ $( document ).ready(function() {
 	    // turn
 		
 			$('#viewer').turn({acceleration: true, 
+								width: 1152,
+								height: 752,
 								pages: pagesCount,
 								elevation: 50,
 								gradients: !$.isTouch,
@@ -685,6 +700,8 @@ $( document ).ready(function() {
 										tp_Range = $(this).turn('range', page);
 										tp_CurrentPage = page;
 										console.log(tp_CurrentPage);
+										// Update the current URI
+										Hash.go('page/' + page).update();
 
 									},
 
@@ -711,8 +728,7 @@ $( document ).ready(function() {
 								}
 								 
 							});
-							
-							
+			
 							
 	},
 
@@ -1142,6 +1158,7 @@ $( document ).ready(function() {
 	    div.appendChild(canvas);
 	    this.canvas = canvas;
 
+	    //creating text layer start here
 	    var textLayerDiv = null;
 	    if (!PDFJS.disableTextLayer) {
 	      textLayerDiv = document.createElement('div');
@@ -1155,12 +1172,7 @@ $( document ).ready(function() {
 	    canvas.height = viewport.height;
 
 	    var ctx = canvas.getContext('2d');
-		/*
-	    ctx.save();
-	    ctx.fillStyle = 'rgb(255, 255, 255)';
-	    ctx.fillRect(0, 0, canvas.width, canvas.height);
-	    ctx.restore();
-		*/
+	    //creating text layer end here
 		
 	    // Rendering area
 
@@ -1676,34 +1688,6 @@ $( document ).ready(function() {
 	  PDFView.setHash(document.location.hash.substring(1));
 	});
 
-	// window.addEventListener('change', function webViewerChange(evt) {
-	//   var files = evt.target.files;
-	//   if (!files || files.length == 0)
-	//     return;
-
-	//   // Read the local file into a Uint8Array.
-	//   var fileReader = new FileReader();
-	//   fileReader.onload = function webViewerChangeFileReaderOnload(evt) {
-	//     var data = evt.target.result;
-	//     var buffer = new ArrayBuffer(data.length);
-	//     var uint8Array = new Uint8Array(buffer);
-
-	//     for (var i = 0; i < data.length; i++)
-	//       uint8Array[i] = data.charCodeAt(i);
-
-	//     PDFView.open(uint8Array, 0);
-	//   };
-
-	//   // Read as a binary string since "readAsArrayBuffer" is not yet
-	//   // implemented in Firefox.
-	//   var file = files[0];
-	//   fileReader.readAsBinaryString(file);
-	//   document.title = file.name;
-
-	//   // URL does not reflect proper document location - hiding some icons.
-	//   document.getElementById('viewBookmark').setAttribute('hidden', 'true');
-	//   document.getElementById('download').setAttribute('hidden', 'true');
-	// }, true);
 
 	function selectScaleOption(value) {
 	  var options = document.getElementById('scaleSelect').options;
@@ -1760,23 +1744,9 @@ $( document ).ready(function() {
 	    var selected = document.querySelector('.thumbnail.selected');
 	    if (selected)
 	      selected.classList.remove('selected');
-	    // var thumbnail = document.getElementById('thumbnailContainer' + page);
-	    // thumbnail.classList.add('selected');
-	    // var visibleThumbs = PDFView.getVisibleThumbs();
-	    // var numVisibleThumbs = visibleThumbs.length;
-	    // // If the thumbnail isn't currently visible scroll it into view.
-	    // if (numVisibleThumbs > 0) {
-	    //   var first = visibleThumbs[0].id;
-	    //   // Account for only one thumbnail being visible.
-	    //   var last = numVisibleThumbs > 1 ?
-	    //               visibleThumbs[numVisibleThumbs - 1].id : first;
-	    //   if (page <= first || page >= last)
-	    //     thumbnail.scrollIntoView();
-	    //}
-
 	  }
-	  document.getElementById('previous').disabled = (page <= 1);
-	  document.getElementById('next').disabled = (page >= PDFView.pages.length);
+	  // document.getElementById('previous').disabled = (page <= 1);
+	  //document.getElementById('next').disabled = (page >= PDFView.pages.length);
 	}, true);
 
 	window.addEventListener('keydown', function keydown(evt) {
@@ -1829,13 +1799,13 @@ $( document ).ready(function() {
 	      case 37: // left arrow
 	      case 75: // 'k'
 	      case 80: // 'p'
-	        PDFView.page--;
+	        //PDFView.page--;
 	        handled = true;
 	        break;
 	      case 39: // right arrow
 	      case 74: // 'j'
 	      case 78: // 'n'
-	        PDFView.page++;
+	        //PDFView.page++;
 	        handled = true;
 	        break;
 	    }
@@ -1846,23 +1816,46 @@ $( document ).ready(function() {
 	  }
 	});
 
-	$('#zoom_in').on('click',function() {
+	/*zoom for pdf.js start here */
+	// $('#zoom_in').on('click',function() {
 
-		PDFView.zoomIn();
+	// 	PDFView.zoomIn();
+	// });
+
+	// $('#zoom_out').on('click',function() {
+
+	// 	PDFView.zoomOut();
+	// });
+
+	$('#zoom_in').on('click',function(evt) {
+
+        evt.stopPropagation();
+        evt.preventDefault();
+        $( "#turn_zoom" ).trigger( "click" );
+
 	});
 
 	$('#zoom_out').on('click',function() {
 
-		PDFView.zoomOut();
+		PDFView.resetIntialView();
 	});
+
 
 	$('#reset_initial').on('click',function() {
 
 		PDFView.resetIntialView();
 	});
 
+	$('#turn_zoom').on('click',function() {
+
+		PDFView.zoomFromTurnJs();
+
+	});
+
 	//reset the container if it is too much bigger
 	resetContainer();
+	/*zoom for pdf.js end here */
+
 
 	//for zoom of the flipbook
 	//viewer
@@ -2007,34 +2000,72 @@ $( document ).ready(function() {
 
 	 //  });
 
-
-		$(".magazine-viewport").bind("zoom.tap", function(event) {
-		if ($(this).zoom("value")==1) {
-			$(this).zoom("zoomIn", event);
-		} else {
-			$(this).zoom("zoomOut");
-		}
+	// 	$(".magazine-viewport").bind("zoom.tap", function(event) {
+	// 	if ($(this).zoom("value")==1) {
+	// 		$(this).zoom("zoomIn", event);
+	// 	} else {
+	// 		$(this).zoom("zoomOut");
+	// 	}
+	// });
+	$('#next_page').on('click' , function(e) {
+		$('#viewer').turn('next');
 	});
 
+	$('#previous_page').on('click' , function(e) {
+		$('#viewer').turn('previous');
+	});
+
+	$(window).bind('keydown', function(e) {
+
+		if (e.target && e.target.tagName.toLowerCase()!='input')
+			if (e.keyCode==37)
+				$('#viewer').turn('previous');
+			else if (e.keyCode==39)
+				$('#viewer').turn('next');
+
+	});
+
+
+	// URIs - Format #/page/1 
+	Hash.on('^page\/([0-9]*)$', {
+		yep: function(path, parts) {
+			//console.log(parts);
+			var page = parts[1];
+			// console.log(page);
+			//if (page!==undefined) {
+				//if ($('#book').turn('is'))
+					$('#viewer').turn('page', page);
+			//}
+
+		},
+		nop: function(path) {
+
+			//if ($('#book').turn('is'))
+				$('#viewer').turn('page', 1);
+		}
+	});
 
 	$('#viewer').click(function(e) {
 
 		//get the position of clicked
-	    var pos = {
-	        x: e.pageX - $(this).offset().left,
-	        y: e.pageY - $(this).offset().top
-	    };
-	    console.log(pos);
+	    // var pos = {
+	    //     x: e.pageX - $(this).offset().left,
+	    //     y: e.pageY - $(this).offset().top
+	    // };
+	    // console.log(pos);
 	    
 	    // $('#viewer').zoomIn('');
 	 //    $("#viewer").turn();
+
 	 //    $(".magazine-viewport").zoom({
 		// 	flipbook: $("#viewer"),
 		// 	max: 2
 		// });
+
+
 		
-	    $('.magazine-viewport').zoom('zoomIn');
-	    event.preventDefault();
+	    // $('.magazine-viewport').zoom('zoomIn');
+	    //e.preventDefault();
 
 			// $(".magazine-viewport").zoom({
 
@@ -2045,21 +2076,66 @@ $( document ).ready(function() {
 		// });
 	});
 
+	// $(window).bind('keydown', function(e){
+	// if (e.keyCode==13)
+	//     $('.magazine-viewport').zoom('zoomIn');
+	// else if (e.keyCode==27)
+	//     $('.magazine-viewport').zoom('zoomOut');
+	// });
 
+	// $("#viewer").turn();
 
+// 	$(".magazine-viewport").zoom({
 
+//     flipbook: $("#viewer"),
+//     max: 2,
+//     when:{
+//         tap: function(event){
+//             if ($(this).zoom("value")==1) {
 
-
-
-
-
-
+//                 $(this).zoom("zoomIn", event);
+//             } else {
+//                 $(this).zoom("zoomOut");
+//             }
+//         }
+//     }
+// });
 
 
 	  /*zoom functions end here */
 
+
+
+    // $(".zoom").click(function(evt) {
+    //   evt.stopPropagation();
+    //   $(this).zoomTo();
+    // });
+    // $(window).click(function(evt) {
+    //   evt.stopPropagation();
+    //   $("body").zoomTo();
+    // });
+    // $("body").zoomTo();
+
+    /* zooming of flipbook start here */
+    // $(".zoomContainer").click(function(evt) {
+    //                                     evt.stopPropagation();
+    //                                     evt.preventDefault();
+                                        
+    //                                     //$(this).zoomTo({targetsize:2.0, nativeanimation:true});
+    //                                     $( "#turn_zoom" ).trigger( "click" );
+    //                                     //call the pdfjs zoom function with same scale size
+                                   
+    //                             });
+                                
+    //                             $(window).click(function(evt) {
+    //                                     evt.stopPropagation();
+    //                                     $("body").zoomTo({targetsize:1.0, nativeanimation:true});
+    //                             });
+   
+
 });
 
+/* zooming of flipbook end here */
 
 function resetContainer(scale) {
 	console.log('reset container called');
@@ -2068,3 +2144,152 @@ function resetContainer(scale) {
 	},1000);
 
 }
+
+/* dragging the flipbook start here */
+
+!(function(moduleName, definition) {
+  // Whether to expose Draggable as an AMD module or to the global object.
+  if (typeof define === 'function' && typeof define.amd === 'object') define(definition);
+  else this[moduleName] = definition();
+
+})('draggable', function definition() {
+  var currentElement;
+  var fairlyHighZIndex = '10';
+
+  function draggable(element, handle) {
+    handle = handle || element;
+    setPositionType(element);
+    setDraggableListeners(element);
+    handle.addEventListener('mousedown', function(event) {
+      startDragging(event, element);
+    });
+  }
+
+  function setPositionType(element) {
+    element.style.position = 'absolute';
+  }
+
+  function setDraggableListeners(element) {
+    element.draggableListeners = {
+      start: [],
+      drag: [],
+      stop: []
+    };
+    element.whenDragStarts = addListener(element, 'start');
+    element.whenDragging = addListener(element, 'drag');
+    element.whenDragStops = addListener(element, 'stop');
+  }
+
+  function startDragging(event, element) {
+    currentElement && sendToBack(currentElement);
+    currentElement = bringToFront(element);
+
+
+    var initialPosition = getInitialPosition(currentElement);
+    currentElement.style.left = inPixels(initialPosition.left);
+    currentElement.style.top = inPixels(initialPosition.top);
+    currentElement.lastXPosition = event.clientX;
+    currentElement.lastYPosition = event.clientY;
+
+    var okToGoOn = triggerEvent('start', { x: initialPosition.left, y: initialPosition.top, mouseEvent: event });
+    if (!okToGoOn) return;
+
+    addDocumentListeners();
+  }
+
+  function addListener(element, type) {
+    return function(listener) {
+      element.draggableListeners[type].push(listener);
+    };
+  }
+
+  function triggerEvent(type, args) {
+    var result = true;
+    var listeners = currentElement.draggableListeners[type];
+    for (var i = listeners.length - 1; i >= 0; i--) {
+      if (listeners[i](args) === false) result = false;
+    };
+    return result;
+  }
+
+  function sendToBack(element) {
+    var decreasedZIndex = fairlyHighZIndex - 1;
+    element.style['z-index'] = decreasedZIndex;
+    element.style['zIndex'] = decreasedZIndex;
+  }
+
+  function bringToFront(element) {
+    element.style['z-index'] = fairlyHighZIndex;
+    element.style['zIndex'] = fairlyHighZIndex;
+    return element;
+  }
+
+  function addDocumentListeners() {
+    document.addEventListener('selectstart', cancelDocumentSelection);
+    document.addEventListener('mousemove', repositionElement);
+    document.addEventListener('mouseup', removeDocumentListeners);
+  }
+
+  function getInitialPosition(element) {
+    var top = 0;
+    var left = 0;
+    var currentElement = element;
+    do {
+      top += currentElement.offsetTop;
+      left += currentElement.offsetLeft;
+    } while (currentElement = currentElement.offsetParent);
+
+    var computedStyle = getComputedStyle? getComputedStyle(element) : false;
+    if (computedStyle) {
+      left = left - (parseInt(computedStyle['margin-left']) || 0) - (parseInt(computedStyle['border-left']) || 0);
+      top = top - (parseInt(computedStyle['margin-top']) || 0) - (parseInt(computedStyle['border-top']) || 0);
+    }
+
+    return {
+      top: top,
+      left: left
+    };
+  }
+
+  function inPixels(value) {
+    return value + 'px';
+  }
+
+  function cancelDocumentSelection(event) {
+    event.preventDefault && event.preventDefault();
+    event.stopPropagation && event.stopPropagation();
+    event.returnValue = false;
+    return false;
+  }
+
+  function repositionElement(event) {
+    var style = currentElement.style;
+    var elementXPosition = parseInt(style.left, 10);
+    var elementYPosition = parseInt(style.top, 10);
+
+    var elementNewXPosition = elementXPosition + (event.clientX - currentElement.lastXPosition);
+    var elementNewYPosition = elementYPosition + (event.clientY - currentElement.lastYPosition);
+
+    style.left = inPixels(elementNewXPosition);
+    style.top = inPixels(elementNewYPosition);
+
+    currentElement.lastXPosition = event.clientX;
+    currentElement.lastYPosition = event.clientY;
+
+    triggerEvent('drag', { x: elementNewXPosition, y: elementNewYPosition, mouseEvent: event });
+  }
+
+  function removeDocumentListeners(event) {
+    document.removeEventListener('selectstart', cancelDocumentSelection);
+    document.removeEventListener('mousemove', repositionElement);
+    document.removeEventListener('mouseup', removeDocumentListeners);
+
+    var left = parseInt(currentElement.style.left, 10);
+    var top = parseInt(currentElement.style.top, 10);
+    triggerEvent('stop', { x: left, y: top, mouseEvent: event });
+  }
+
+  return draggable;
+});
+
+ /* dragging the flipbook end here */

@@ -33,8 +33,8 @@
             <ul class="nav"> 
             <li><a class="brand" href="/">Home</a></li>
             @if(!Auth::check())
-              <li><a href="users/register">Register</a></li>
-              <li><a href="users/login">Login</a></li>
+              <!-- <li><a href="users/register">Register</a></li>
+              <li><a href="users/login">Login</a></li> -->
             @else
                <li>{{ HTML::link('users/logout', 'logout') }}</li>
                <!--<li class="dropdown">{{ HTML::link('/category', 'Add category') }}</li>-->

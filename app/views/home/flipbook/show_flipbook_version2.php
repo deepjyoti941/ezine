@@ -7,26 +7,15 @@
 
     <link rel="stylesheet" href="/css/flipbook/viewer.css">
     <link rel="stylesheet" href="/css/flipbook/book.css">
-    <link rel="resource" type="application/l10n" href="locale.properties"/><!-- PDFJSSCRIPT_REMOVE_CORE -->
-   <!-- 
-	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="js/turn.js"></script>
-    <script type="text/javascript" src="compatibility.js"></script> PDFJSSCRIPT_REMOVE_FIREFOX_EXTENSION -->
-    <!--
-    <script type="text/javascript" src="../external/webL10n/l10n.js"></script>PDFJSSCRIPT_REMOVE_CORE 
-    <script type="text/javascript" src="js/pdf.js"></script>PDFJSSCRIPT_REMOVE_CORE -->
-    <!--
-    <script type="text/javascript" src="debugger.js"></script>
-    <script type="text/javascript" src="viewer.js"></script> -->
 
     <script src="/js/vendor/jquery.js"></script>
-     <script src="/js/vendor/zoom.min.js"></script>
+    <script src="/js/vendor/zoomooz/jquery.zoomooz.js"></script>
+    <script src="/js/vendor/zoom.min.js"></script>
     <script src="/js/vendor/turn4.min.js"></script>
     <script src="/js/vendor/compatibility.js"></script>
     <script src="/js/vendor/changes_in_pdfjs.js"></script>
     <script src="/js/vendor/oldpdf.js"></script>
     <script src="/js/vendor/hash.js"></script>
-     <!--<script src="/js/vendor/modernizr.js"></script>-->
     <script src="/js/flipbookV2.0.js"></script>
 
   </head>
@@ -61,11 +50,11 @@
               <div id="toolbarViewerLeft">
                 <div class="toolbarButtonSpacer"></div>
                 <div class="splitToolbarButton">
-                  <button class="toolbarButton pageUp" title="Previous Page" onclick="PDFView.page--" id="previous" tabindex="4" data-l10n-id="previous">
+                  <button class="toolbarButton pageUp" title="Previous Page" id="previous_page" tabindex="4">
                     <span data-l10n-id="previous_label">Previous</span>
                   </button>
                   <div class="splitToolbarButtonSeparator"></div>
-                  <button class="toolbarButton pageDown" title="Next Page" onclick="PDFView.page++" id="next" tabindex="5" data-l10n-id="next">
+                  <button class="toolbarButton pageDown" title="Next Page" id="next_page" tabindex="5">
                     <span data-l10n-id="next_label">Next</span>
                   </button>
                 </div>
@@ -81,12 +70,10 @@
           
               <button style="width: 120px;" onclick="cancelFullscreen(document.documentElement);" class="sexyButton">Exit Fullscreen</button>
           
-                <!-- <div class="toolbarButtonSpacer"></div> -->
-                <!--
-                <a href="#" id="viewBookmark" class="toolbarButton bookmark" title="Current view (copy or open in new window)" tabindex="13" data-l10n-id="bookmark"><span data-l10n-id="bookmark_label">Current View</span></a> -->
               </div>
               <div class="outerCenter">
-                <button style="width: 130px;" id="reset_initial" hidden="true">Reset</button>
+                <button style="width: 130px;" id="reset_initial" hidden="true"></button>
+                <button style="width: 130px;" id="turn_zoom" hidden="true"></button>
                 <div class="innerCenter" id="toolbarViewerMiddle">
                   <div class="splitToolbarButton">
 
@@ -98,7 +85,7 @@
                       <span data-l10n-id="zoom_in_label">ZOOM IN</span>
                      </button>
                   </div>
-                  <span id="scaleSelectContainer" class="dropdownToolbarButton">
+                  <span id="scaleSelectContainer" class="dropdownToolbarButton" hidden="true">
                      <select id="scaleSelect" onchange="PDFView.parseScale(this.value);" title="Zoom" oncontextmenu="return false;" tabindex="9" data-l10n-id="zoom">
                       <option id="pageAutoOption" value="auto" selected="selected" data-l10n-id="page_scale_auto">Automatic Zoom</option>
                       <option id="pageActualOption" value="page-actual" data-l10n-id="page_scale_actual">Actual Size</option>
@@ -119,9 +106,9 @@
           </div>
         </div>
 
-        <div id="viewerContainer">
-          <div class="magazine-viewport">
-            <div id="viewer"></div>
+        <div id="viewerContainer" class="zoomViewport">
+          <div class="magazine-viewport zoomContainer" style="position: relative;overflow: auto;">
+            <div id="viewer" class="zoomContainer"></div>
           </div> 
         </div>
 
@@ -150,17 +137,6 @@
         </div>
 
       </div> <!-- mainContainer -->
-
-<!--     <div style="float:left">
-        <button style="width: 122px;" onclick="launchFullscreen(document.documentElement);" class="sexyButton">Launch Fullscreen</button>
-    </div>
-    <div>
-        <button style="width: 120px;" onclick="cancelFullscreen(document.documentElement);" class="sexyButton">Exit Fullscreen</button>
-    </div> -->
-    </div> <!-- outerContainer -->
-<!--     <div style="float:left">
-      <button style="width: 122px;" onclick="launchFullscreen(document.documentElement);" class="sexyButton">Launch Fullscreen</button>
-    </div> -->
 
      <!--script for full screen -->
       <script type="text/javascript">
