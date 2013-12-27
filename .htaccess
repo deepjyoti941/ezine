@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^12thcross.com
+RewriteRule (.*) http://www.12thcross.com/$1 [R=301,L]
