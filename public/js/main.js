@@ -35,8 +35,9 @@ $(document).ready(function(){
 	      	$('.upload_pdf').removeAttr('disabled');
 
 	      	//bind magazine id to button
-	      	$('.upload_image').attr('magazine_id',res.magazine_id);
-	      	$('.upload_pdf').attr('magazine_id',res.magazine_id);
+	      	//$('.upload_image').attr('magazine_id',res.magazine_id);
+	      	//$('.upload_pdf').attr('magazine_id',res.magazine_id);
+          $('.magazine_id').val(res.magazine_id);
 
 	      }
 

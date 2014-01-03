@@ -160,7 +160,7 @@
             }
           }
 
-            // Events
+          // Events
           document.addEventListener("fullscreenchange", function(e) {
             console.log("fullscreenchange event! ", e);
           });

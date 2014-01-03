@@ -18,7 +18,7 @@ class MagazineUploadsController extends BaseController {
 	    print_r($files);
 	    $files = [$files];
 	    $new_image_src_data = array();
-	    foreach ($files[0] as $file) {
+	    foreach ($files as $file) {
 	    	
 	      $absolute_path='/uploads/magazine/img/'.$magazine_id.'/';
 	      $dest = public_path().$absolute_path;
@@ -35,7 +35,7 @@ class MagazineUploadsController extends BaseController {
 		  $image = $imagine->open(public_path().$main_image_url);
 		  $image->resize(new Box(93,127))
 		  		->save(public_path().$thumb_image_url);
-		  echo "<br>".public_path().$thumb_image_url;
+		  //echo "<br>".public_path().$thumb_image_url;
 
 	      // Make an entry in media_option_images_tables
 	      $image = new MagazineImageTable;
@@ -77,5 +77,40 @@ class MagazineUploadsController extends BaseController {
 
 	    //return json_encode(['status' => 'success','src'=>$new_file_src]);
 	}
+
+	public function uploadTestImage() {
+
+
+		$input = Input::get();
+		print_r($input);
+	    $magazine_id = $input['magazine_id'];
+	    //print_r($input);
+
+	    $files = Input::file('myfile');
+	    $mine = Input::file('myfile')->getMimeType();
+	    print_r($mine);
+	    if($mine=='image/jpeg'){
+	    	echo "mine type is image";
+	    }else{
+	    	echo "not of mine type";
+	    }
+	    print_r($files);
+	    $files = [$files]; // multi file upload consistency :| (file_select[] name i.e.)
+	    
+	    foreach ($files as $file) {
+
+	      $absolute_path='/uploads/magazine/file/'.$magazine_id.'/';
+	      $dest = public_path().$absolute_path;
+	      $new_file_src = $magazine_id."_".$file->getClientOriginalName();
+	      //save the file to diskfreespace()
+	      $file->move($dest, $new_file_src);
+	      
+	    }
+
+
+
+	}
+
+
 
 }

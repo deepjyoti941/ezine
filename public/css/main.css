@@ -463,3 +463,10 @@ div.magazineMainCategoryHeight, h3.magazineMainCategoryHeight {
   min-height:200px;  
   max-height:200px;
 }
+
+/* upload with progress bar styles */
+
+form { display: block; margin: 20px; background: #eee; border-radius: 10px; padding: 15px }
+.progress { position:relative;border: 1px solid #ddd; padding: 1px; border-radius: 3px;margin-top: 15px;}
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }

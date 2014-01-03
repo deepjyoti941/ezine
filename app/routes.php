@@ -29,6 +29,8 @@ Route::post('/add-magazine' , 'MagazineController@addMagazine');
 Route::post('/upload-image' , 'MagazineUploadsController@uploadImage');
 Route::post('/upload-pdf' 	, 'MagazineUploadsController@uploadPdfFile');
 
+Route::post('/upload-image-testing' , 'MagazineUploadsController@uploadTestImage');
+
 //home
 Route::get('/','HomeController@index');
 //Route::get('/magazine-details' , 'HomeController@magazineDetails' );
